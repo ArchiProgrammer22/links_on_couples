@@ -8,7 +8,7 @@ import java.util.Scanner;
 import java.sql.*;
 
 /**
- * Getter links on pairs
+ * Getter links on classes
  * Sqlite link: https: //mvnrepository.com/artifact/org.xerial/sqlite-jdbc
  * In the 'db' folder you can find a test database with which you can do everything you need
  * The program has basic methods for getting and editing data from the database
@@ -41,9 +41,9 @@ public class Main {
         preparedStatement.setInt(1, day);
         resultSet  = preparedStatement.executeQuery();
 
-        //output info, if all columns with pairs have link.
-        //If you don't have a several pairs, input something in the column.
-        //For example "no pair" or just space
+        //output info, if all columns with classes have link.
+        //If you don't have a several classes, input something in the column.
+        //For example "no classes" or just space
         
         while (resultSet.next())    
             System.out.println(
